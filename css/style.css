@@ -195,10 +195,10 @@ nav a:focus::after {
     align-items: center;
     text-align: center;
   }
-  h1 , h2 {
+  h1,
+  h2 {
     text-align: left;
     padding-left: 20px;
-
   }
   header {
     width: 320px;
@@ -235,6 +235,70 @@ nav a:focus::after {
 
   .benefits-list {
     padding: 30px;
+  }
+
+  .btn {
+    width: 100px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    padding-left: 25px;
+  }
+
+  h2 {
+    text-align:center;
+  }
+  header {
+    width: 480px;
+    align-items: center;
+    margin: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding-left: 190px;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .hero-image {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .benefits-list {
+    padding: 25px 60px;
   }
 
   .btn {
