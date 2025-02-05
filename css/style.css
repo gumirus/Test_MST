@@ -193,7 +193,7 @@ nav a:focus::after {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px 0;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .photo-left,
@@ -309,6 +309,22 @@ hr {
 
   .content-center {
     order: 2;
+  }
+
+  .grid-container div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .content-center p {
+    display: flex;
+    padding: 10px 0;
+    padding-right: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 }
 
