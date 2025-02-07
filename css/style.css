@@ -34,12 +34,16 @@ header {
 }
 
 .header-small {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   background-color: var(--header-small);
-  padding: 0.6vw 1.125vw;
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
-  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+  padding: 1vw 2vw;
 }
 
 nav ul {
@@ -644,10 +648,16 @@ footer button:hover {
     height: auto;
   }
 
+  .header {
+    padding: 0.1vw;
+  }
   header p {
     flex-direction: column;
     align-items: center;
     font-size: 6vw;
+  }
+  nav ul {
+    padding: 1vw;
   }
 
   nav a {
@@ -661,7 +671,7 @@ footer button:hover {
   .hero-info {
     grid-column: 1;
     grid-row: 1;
-    padding: 1.25vw 2.125vw 20.12vw 20.25vw;
+    padding: 14.25vw 20.12vw 25.12vw 20.25vw;
     background-color: var(--black);
     position: relative;
   }
