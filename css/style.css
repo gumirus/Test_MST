@@ -502,6 +502,10 @@ footer button:hover {
     padding: 5vw;
   }
 
+  .header-small {
+    width: 78vw;
+  }
+
   .nav-menu {
     flex-direction: column;
     gap: 3vw;
